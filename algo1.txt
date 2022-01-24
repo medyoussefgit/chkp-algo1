@@ -1,0 +1,33 @@
+algorithm chkp
+var
+ sentence:string;
+ l,i:integer;
+ nbr-words:integer:=1;
+ nbr-voyelle:integer:=0;
+
+begin
+
+ l:= length(sentence);
+ repeat
+  write('ecrire votre phrase');
+  read(sentence);
+ until(sentence[l]='.');
+
+ for(i := 1 to l do)
+  if (sentence[i]=' ')then
+   nbr-words:=nbr-words+1;
+  end if
+ end for
+  write('le nombre de words est',nbr-words);
+
+ for(i := 1 to l do)
+  if (sentence[i] in ['a','e','o','u','i','y'])then
+   nbr-voyelle:=nbr-voyelle+1;
+  end if
+ end for
+  write('le nombre de voyelle est',nbr-voyelle);
+
+end.
+  
+
+
