@@ -1,13 +1,11 @@
-algorithm chkp
-var
+ALGORITHM algorithm_name
+VAR
  sentence:string;
  l,i:integer;
  nbr-words:integer:=1;
  nbr-voyelle:integer:=0;
-
-begin
-
- l:= length(sentence);
+BEGIN
+  l:= length(sentence);
  repeat
   write('ecrire votre phrase');
   read(sentence);
@@ -27,7 +25,8 @@ begin
  end for
   write('le nombre de voyelle est',nbr-voyelle);
 
-end.
+END
+
   
 
 
